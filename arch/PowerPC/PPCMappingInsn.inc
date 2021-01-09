@@ -11,7 +11,7 @@
 },
 
 {
-	PPC_CLRLSLDIo, PPC_INS_CLRLSLDI,
+	PPC_CLRLSLDI_rec, PPC_INS_CLRLSLDI,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -25,7 +25,7 @@
 },
 
 {
-	PPC_CLRLSLWIo, PPC_INS_CLRLSLWI,
+	PPC_CLRLSLWI_rec, PPC_INS_CLRLSLWI,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -39,7 +39,7 @@
 },
 
 {
-	PPC_CLRRDIo, PPC_INS_CLRRDI,
+	PPC_CLRRDI_rec, PPC_INS_CLRRDI,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -53,7 +53,7 @@
 },
 
 {
-	PPC_CLRRWIo, PPC_INS_CLRRWI,
+	PPC_CLRRWI_rec, PPC_INS_CLRRWI,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -172,7 +172,7 @@
 },
 
 {
-	PPC_EXTLDIo, PPC_INS_EXTLDI,
+	PPC_EXTLDI_rec, PPC_INS_EXTLDI,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -186,7 +186,7 @@
 },
 
 {
-	PPC_EXTLWIo, PPC_INS_EXTLWI,
+	PPC_EXTLWI_rec, PPC_INS_EXTLWI,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -200,7 +200,7 @@
 },
 
 {
-	PPC_EXTRDIo, PPC_INS_EXTRDI,
+	PPC_EXTRDI_rec, PPC_INS_EXTRDI,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -214,7 +214,7 @@
 },
 
 {
-	PPC_EXTRWIo, PPC_INS_EXTRWI,
+	PPC_EXTRWI_rec, PPC_INS_EXTRWI,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -228,7 +228,7 @@
 },
 
 {
-	PPC_INSLWIo, PPC_INS_INSLWI,
+	PPC_INSLWI_rec, PPC_INS_INSLWI,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -242,7 +242,7 @@
 },
 
 {
-	PPC_INSRDIo, PPC_INS_INSRDI,
+	PPC_INSRDI_rec, PPC_INS_INSRDI,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -256,7 +256,7 @@
 },
 
 {
-	PPC_INSRWIo, PPC_INS_INSRWI,
+	PPC_INSRWI_rec, PPC_INS_INSRWI,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -277,7 +277,7 @@
 },
 
 {
-	PPC_RLWIMIobm, PPC_INS_RLWIMI,
+	PPC_RLWIMIbm_rec, PPC_INS_RLWIMI,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -291,7 +291,7 @@
 },
 
 {
-	PPC_RLWINMobm, PPC_INS_RLWINM,
+	PPC_RLWINMbm_rec, PPC_INS_RLWINM,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -305,7 +305,7 @@
 },
 
 {
-	PPC_RLWNMobm, PPC_INS_RLWNM,
+	PPC_RLWNMbm_rec, PPC_INS_RLWNM,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -319,7 +319,7 @@
 },
 
 {
-	PPC_ROTRDIo, PPC_INS_ROTRDI,
+	PPC_ROTRDI_rec, PPC_INS_ROTRDI,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -333,7 +333,7 @@
 },
 
 {
-	PPC_ROTRWIo, PPC_INS_ROTRWI,
+	PPC_ROTRWI_rec, PPC_INS_ROTRWI,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -347,7 +347,7 @@
 },
 
 {
-	PPC_SLDIo, PPC_INS_SLDI,
+	PPC_SLDI_rec, PPC_INS_SLDI,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -361,7 +361,7 @@
 },
 
 {
-	PPC_SLWIo, PPC_INS_SLWI,
+	PPC_SLWI_rec, PPC_INS_SLWI,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -375,7 +375,7 @@
 },
 
 {
-	PPC_SRDIo, PPC_INS_SRDI,
+	PPC_SRDI_rec, PPC_INS_SRDI,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -389,7 +389,7 @@
 },
 
 {
-	PPC_SRWIo, PPC_INS_SRWI,
+	PPC_SRWI_rec, PPC_INS_SRWI,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -410,7 +410,7 @@
 },
 
 {
-	PPC_SUBICo, PPC_INS_SUBIC,
+	PPC_SUBIC_rec, PPC_INS_SUBIC,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -438,6 +438,20 @@
 },
 
 {
+	PPC_ADD4O, PPC_INS_ADDO,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_ADD4O_rec, PPC_INS_ADDO,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_ADD4TLS, PPC_INS_ADD,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
@@ -445,9 +459,9 @@
 },
 
 {
-	PPC_ADD4o, PPC_INS_ADD,
+	PPC_ADD4_rec, PPC_INS_ADD,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -473,13 +487,6 @@
 },
 
 {
-	PPC_ADD8o, PPC_INS_ADD,
-#ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
-#endif
-},
-
-{
 	PPC_ADDC, PPC_INS_ADDC,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { PPC_REG_CARRY, 0 }, { 0 }, 0, 0
@@ -494,16 +501,23 @@
 },
 
 {
-	PPC_ADDC8o, PPC_INS_ADDC,
+	PPC_ADDCO, PPC_INS_ADDCO,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CARRY, PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_ADDCo, PPC_INS_ADDC,
+	PPC_ADDCO_rec, PPC_INS_ADDCO,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CARRY, PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_ADDC_rec, PPC_INS_ADDC,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -522,16 +536,23 @@
 },
 
 {
-	PPC_ADDE8o, PPC_INS_ADDE,
+	PPC_ADDEO, PPC_INS_ADDEO,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_CARRY, 0 }, { PPC_REG_CARRY, PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_ADDEo, PPC_INS_ADDE,
+	PPC_ADDEO_rec, PPC_INS_ADDEO,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_CARRY, 0 }, { PPC_REG_CARRY, PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_ADDE_rec, PPC_INS_ADDE,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -543,7 +564,7 @@
 },
 
 {
-	PPC_ADDI8, PPC_INS_ADDI,
+	PPC_ADDI8, PPC_INS_LI,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -564,9 +585,9 @@
 },
 
 {
-	PPC_ADDICo, PPC_INS_ADDIC,
+	PPC_ADDIC_rec, PPC_INS_ADDIC,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CARRY, PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -578,7 +599,7 @@
 },
 
 {
-	PPC_ADDIS8, PPC_INS_ADDIS,
+	PPC_ADDIS8, PPC_INS_LIS,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -599,16 +620,23 @@
 },
 
 {
-	PPC_ADDME8o, PPC_INS_ADDME,
+	PPC_ADDMEO, PPC_INS_ADDMEO,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_CARRY, 0 }, { PPC_REG_CARRY, PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_ADDMEo, PPC_INS_ADDME,
+	PPC_ADDMEO_rec, PPC_INS_ADDMEO,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_CARRY, 0 }, { PPC_REG_CARRY, PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_ADDME_rec, PPC_INS_ADDME,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -634,16 +662,23 @@
 },
 
 {
-	PPC_ADDZE8o, PPC_INS_ADDZE,
+	PPC_ADDZEO, PPC_INS_ADDZEO,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_CARRY, 0 }, { PPC_REG_CARRY, PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_ADDZEo, PPC_INS_ADDZE,
+	PPC_ADDZEO_rec, PPC_INS_ADDZEO,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_CARRY, 0 }, { PPC_REG_CARRY, PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_ADDZE_rec, PPC_INS_ADDZE,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -662,13 +697,6 @@
 },
 
 {
-	PPC_AND8o, PPC_INS_AND,
-#ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
-#endif
-},
-
-{
 	PPC_ANDC, PPC_INS_ANDC,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
@@ -683,51 +711,30 @@
 },
 
 {
-	PPC_ANDC8o, PPC_INS_ANDC,
+	PPC_ANDC_rec, PPC_INS_ANDC,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_ANDCo, PPC_INS_ANDC,
+	PPC_ANDIS_rec, PPC_INS_ANDIS,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_ANDISo, PPC_INS_ANDIS,
+	PPC_ANDI_rec, PPC_INS_ANDI,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_ANDISo8, PPC_INS_ANDIS,
+	PPC_AND_rec, PPC_INS_AND,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_ANDIo, PPC_INS_ANDI,
-#ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_ANDIo8, PPC_INS_ANDI,
-#ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_ANDo, PPC_INS_AND,
-#ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -886,91 +893,91 @@
 },
 
 {
-	PPC_BCDCFNo, PPC_INS_BCDCFN,
+	PPC_BCDCFN_rec, PPC_INS_BCDCFN,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_BCDCFSQo, PPC_INS_BCDCFSQ,
+	PPC_BCDCFSQ_rec, PPC_INS_BCDCFSQ,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_BCDCFZo, PPC_INS_BCDCFZ,
+	PPC_BCDCFZ_rec, PPC_INS_BCDCFZ,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_BCDCPSGNo, PPC_INS_BCDCPSGN,
+	PPC_BCDCPSGN_rec, PPC_INS_BCDCPSGN,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_BCDCTNo, PPC_INS_BCDCTN,
+	PPC_BCDCTN_rec, PPC_INS_BCDCTN,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_BCDCTSQo, PPC_INS_BCDCTSQ,
+	PPC_BCDCTSQ_rec, PPC_INS_BCDCTSQ,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_BCDCTZo, PPC_INS_BCDCTZ,
+	PPC_BCDCTZ_rec, PPC_INS_BCDCTZ,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_BCDSETSGNo, PPC_INS_BCDSETSGN,
+	PPC_BCDSETSGN_rec, PPC_INS_BCDSETSGN,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_BCDSRo, PPC_INS_BCDSR,
+	PPC_BCDSR_rec, PPC_INS_BCDSR,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_BCDSo, PPC_INS_BCDS,
+	PPC_BCDS_rec, PPC_INS_BCDS,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_BCDTRUNCo, PPC_INS_BCDTRUNC,
+	PPC_BCDTRUNC_rec, PPC_INS_BCDTRUNC,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_BCDUSo, PPC_INS_BCDUS,
+	PPC_BCDUS_rec, PPC_INS_BCDUS,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_BCDUTRUNCo, PPC_INS_BCDUTRUNC,
+	PPC_BCDUTRUNC_rec, PPC_INS_BCDUTRUNC,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -1453,6 +1460,13 @@
 },
 
 {
+	PPC_CFUGED, PPC_INS_CFUGED,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_CLRBHRB, PPC_INS_CLRBHRB,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
@@ -1474,7 +1488,7 @@
 },
 
 {
-	PPC_CMPD, PPC_INS_CMPD,
+	PPC_CMPD, PPC_INS_CMP,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -1516,7 +1530,7 @@
 },
 
 {
-	PPC_CMPLWI, PPC_INS_CMPLWI,
+	PPC_CMPLWI, PPC_INS_CMPLI,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -1537,7 +1551,7 @@
 },
 
 {
-	PPC_CMPWI, PPC_INS_CMPWI,
+	PPC_CMPWI, PPC_INS_CMPI,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -1551,9 +1565,16 @@
 },
 
 {
-	PPC_CNTLZDo, PPC_INS_CNTLZD,
+	PPC_CNTLZDM, PPC_INS_CNTLZDM,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_CNTLZD_rec, PPC_INS_CNTLZD,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -1572,16 +1593,16 @@
 },
 
 {
-	PPC_CNTLZW8o, PPC_INS_CNTLZW,
+	PPC_CNTLZW8_rec, PPC_INS_CNTLZW,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_CNTLZWo, PPC_INS_CNTLZW,
+	PPC_CNTLZW_rec, PPC_INS_CNTLZW,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -1593,7 +1614,14 @@
 },
 
 {
-	PPC_CNTTZDo, PPC_INS_CNTTZD,
+	PPC_CNTTZDM, PPC_INS_CNTTZDM,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_CNTTZD_rec, PPC_INS_CNTTZD,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -1607,7 +1635,7 @@
 },
 
 {
-	PPC_CNTTZWo, PPC_INS_CNTTZW,
+	PPC_CNTTZW_rec, PPC_INS_CNTTZW,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -1635,7 +1663,7 @@
 },
 
 {
-	PPC_CP_PASTEo, PPC_INS_PASTE,
+	PPC_CP_PASTE_rec, PPC_INS_PASTE,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -1691,7 +1719,7 @@
 },
 
 {
-	PPC_CROR, PPC_INS_CROR,
+	PPC_CROR, PPC_INS_CRMOVE,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -1719,7 +1747,7 @@
 },
 
 {
-	PPC_CRXOR, PPC_INS_CRXOR,
+	PPC_CRXOR, PPC_INS_CRCLR,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -1831,6 +1859,13 @@
 },
 
 {
+	PPC_DCBZ_L, PPC_INS_DCBZ_L,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_DCCCI, PPC_INS_DCCCI,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { PPC_GRP_PPC4XX, 0 }, 0, 0
@@ -1852,6 +1887,20 @@
 },
 
 {
+	PPC_DIVDEO, PPC_INS_DIVDEO,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_DIVDEO_rec, PPC_INS_DIVDEO,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_DIVDEU, PPC_INS_DIVDEU,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
@@ -1859,14 +1908,42 @@
 },
 
 {
-	PPC_DIVDEUo, PPC_INS_DIVDEU,
+	PPC_DIVDEUO, PPC_INS_DIVDEUO,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_DIVDEo, PPC_INS_DIVDE,
+	PPC_DIVDEUO_rec, PPC_INS_DIVDEUO,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_DIVDEU_rec, PPC_INS_DIVDEU,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_DIVDE_rec, PPC_INS_DIVDE,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_DIVDO, PPC_INS_DIVDO,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_DIVDO_rec, PPC_INS_DIVDO,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -1880,16 +1957,30 @@
 },
 
 {
-	PPC_DIVDUo, PPC_INS_DIVDU,
+	PPC_DIVDUO, PPC_INS_DIVDUO,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_DIVDo, PPC_INS_DIVD,
+	PPC_DIVDUO_rec, PPC_INS_DIVDUO,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_DIVDU_rec, PPC_INS_DIVDU,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_DIVD_rec, PPC_INS_DIVD,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -1908,6 +1999,20 @@
 },
 
 {
+	PPC_DIVWEO, PPC_INS_DIVWEO,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_DIVWEO_rec, PPC_INS_DIVWEO,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_DIVWEU, PPC_INS_DIVWEU,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
@@ -1915,14 +2020,42 @@
 },
 
 {
-	PPC_DIVWEUo, PPC_INS_DIVWEU,
+	PPC_DIVWEUO, PPC_INS_DIVWEUO,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_DIVWEo, PPC_INS_DIVWE,
+	PPC_DIVWEUO_rec, PPC_INS_DIVWEUO,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_DIVWEU_rec, PPC_INS_DIVWEU,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_DIVWE_rec, PPC_INS_DIVWE,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_DIVWO, PPC_INS_DIVWO,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_DIVWO_rec, PPC_INS_DIVWO,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -1936,16 +2069,30 @@
 },
 
 {
-	PPC_DIVWUo, PPC_INS_DIVWU,
+	PPC_DIVWUO, PPC_INS_DIVWUO,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_DIVWo, PPC_INS_DIVW,
+	PPC_DIVWUO_rec, PPC_INS_DIVWUO,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_DIVWU_rec, PPC_INS_DIVWU,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_DIVW_rec, PPC_INS_DIVW,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -2398,16 +2545,9 @@
 },
 
 {
-	PPC_EQV8o, PPC_INS_EQV,
+	PPC_EQV_rec, PPC_INS_EQV,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_EQVo, PPC_INS_EQV,
-#ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -3798,16 +3938,9 @@
 },
 
 {
-	PPC_EXTSB8o, PPC_INS_EXTSB,
+	PPC_EXTSB_rec, PPC_INS_EXTSB,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_EXTSBo, PPC_INS_EXTSB,
-#ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -3833,16 +3966,9 @@
 },
 
 {
-	PPC_EXTSH8o, PPC_INS_EXTSH,
+	PPC_EXTSH_rec, PPC_INS_EXTSH,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_EXTSHo, PPC_INS_EXTSH,
-#ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -3861,7 +3987,7 @@
 },
 
 {
-	PPC_EXTSWSLIo, PPC_INS_EXTSWSLI,
+	PPC_EXTSWSLI_rec, PPC_INS_EXTSWSLI,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -3875,16 +4001,9 @@
 },
 
 {
-	PPC_EXTSW_32_64o, PPC_INS_EXTSW,
+	PPC_EXTSW_rec, PPC_INS_EXTSW,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_EXTSWo, PPC_INS_EXTSW,
-#ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -3903,13 +4022,6 @@
 },
 
 {
-	PPC_FABSDo, PPC_INS_FABS,
-#ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
-#endif
-},
-
-{
 	PPC_FABSS, PPC_INS_FABS,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
@@ -3917,9 +4029,9 @@
 },
 
 {
-	PPC_FABSSo, PPC_INS_FABS,
+	PPC_FABSS_rec, PPC_INS_FABS,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -3938,16 +4050,16 @@
 },
 
 {
-	PPC_FADDSo, PPC_INS_FADDS,
+	PPC_FADDS_rec, PPC_INS_FADDS,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_FADDo, PPC_INS_FADD,
+	PPC_FADD_rec, PPC_INS_FADD,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -3966,9 +4078,9 @@
 },
 
 {
-	PPC_FCFIDSo, PPC_INS_FCFIDS,
+	PPC_FCFIDS_rec, PPC_INS_FCFIDS,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -3987,23 +4099,30 @@
 },
 
 {
-	PPC_FCFIDUSo, PPC_INS_FCFIDUS,
+	PPC_FCFIDUS_rec, PPC_INS_FCFIDUS,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_FCFIDUo, PPC_INS_FCFIDU,
+	PPC_FCFIDU_rec, PPC_INS_FCFIDU,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_FCFIDo, PPC_INS_FCFID,
+	PPC_FCFID_rec, PPC_INS_FCFID,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_FCMPOS, PPC_INS_FCMPO,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -4029,13 +4148,6 @@
 },
 
 {
-	PPC_FCPSGNDo, PPC_INS_FCPSGN,
-#ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
-#endif
-},
-
-{
 	PPC_FCPSGNS, PPC_INS_FCPSGN,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
@@ -4043,9 +4155,9 @@
 },
 
 {
-	PPC_FCPSGNSo, PPC_INS_FCPSGN,
+	PPC_FCPSGNS_rec, PPC_INS_FCPSGN,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -4071,14 +4183,14 @@
 },
 
 {
-	PPC_FCTIDUZo, PPC_INS_FCTIDUZ,
+	PPC_FCTIDUZ_rec, PPC_INS_FCTIDUZ,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_FCTIDUo, PPC_INS_FCTIDU,
+	PPC_FCTIDU_rec, PPC_INS_FCTIDU,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -4092,16 +4204,16 @@
 },
 
 {
-	PPC_FCTIDZo, PPC_INS_FCTIDZ,
+	PPC_FCTIDZ_rec, PPC_INS_FCTIDZ,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_FCTIDo, PPC_INS_FCTID,
+	PPC_FCTID_rec, PPC_INS_FCTID,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -4127,14 +4239,14 @@
 },
 
 {
-	PPC_FCTIWUZo, PPC_INS_FCTIWUZ,
+	PPC_FCTIWUZ_rec, PPC_INS_FCTIWUZ,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_FCTIWUo, PPC_INS_FCTIWU,
+	PPC_FCTIWU_rec, PPC_INS_FCTIWU,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -4148,16 +4260,16 @@
 },
 
 {
-	PPC_FCTIWZo, PPC_INS_FCTIWZ,
+	PPC_FCTIWZ_rec, PPC_INS_FCTIWZ,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_FCTIWo, PPC_INS_FCTIW,
+	PPC_FCTIW_rec, PPC_INS_FCTIW,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -4176,16 +4288,16 @@
 },
 
 {
-	PPC_FDIVSo, PPC_INS_FDIVS,
+	PPC_FDIVS_rec, PPC_INS_FDIVS,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_FDIVo, PPC_INS_FDIV,
+	PPC_FDIV_rec, PPC_INS_FDIV,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -4204,16 +4316,16 @@
 },
 
 {
-	PPC_FMADDSo, PPC_INS_FMADDS,
+	PPC_FMADDS_rec, PPC_INS_FMADDS,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_FMADDo, PPC_INS_FMADD,
+	PPC_FMADD_rec, PPC_INS_FMADD,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -4225,9 +4337,9 @@
 },
 
 {
-	PPC_FMRo, PPC_INS_FMR,
+	PPC_FMR_rec, PPC_INS_FMR,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -4246,16 +4358,16 @@
 },
 
 {
-	PPC_FMSUBSo, PPC_INS_FMSUBS,
+	PPC_FMSUBS_rec, PPC_INS_FMSUBS,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_FMSUBo, PPC_INS_FMSUB,
+	PPC_FMSUB_rec, PPC_INS_FMSUB,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -4274,16 +4386,16 @@
 },
 
 {
-	PPC_FMULSo, PPC_INS_FMULS,
+	PPC_FMULS_rec, PPC_INS_FMULS,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_FMULo, PPC_INS_FMUL,
+	PPC_FMUL_rec, PPC_INS_FMUL,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -4295,13 +4407,6 @@
 },
 
 {
-	PPC_FNABSDo, PPC_INS_FNABS,
-#ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
-#endif
-},
-
-{
 	PPC_FNABSS, PPC_INS_FNABS,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
@@ -4309,9 +4414,9 @@
 },
 
 {
-	PPC_FNABSSo, PPC_INS_FNABS,
+	PPC_FNABSS_rec, PPC_INS_FNABS,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -4323,13 +4428,6 @@
 },
 
 {
-	PPC_FNEGDo, PPC_INS_FNEG,
-#ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
-#endif
-},
-
-{
 	PPC_FNEGS, PPC_INS_FNEG,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
@@ -4337,9 +4435,9 @@
 },
 
 {
-	PPC_FNEGSo, PPC_INS_FNEG,
+	PPC_FNEGS_rec, PPC_INS_FNEG,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -4358,16 +4456,16 @@
 },
 
 {
-	PPC_FNMADDSo, PPC_INS_FNMADDS,
+	PPC_FNMADDS_rec, PPC_INS_FNMADDS,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_FNMADDo, PPC_INS_FNMADD,
+	PPC_FNMADD_rec, PPC_INS_FNMADD,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -4386,16 +4484,16 @@
 },
 
 {
-	PPC_FNMSUBSo, PPC_INS_FNMSUBS,
+	PPC_FNMSUBS_rec, PPC_INS_FNMSUBS,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_FNMSUBo, PPC_INS_FNMSUB,
+	PPC_FNMSUB_rec, PPC_INS_FNMSUB,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -4414,16 +4512,16 @@
 },
 
 {
-	PPC_FRESo, PPC_INS_FRES,
+	PPC_FRES_rec, PPC_INS_FRES,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_FREo, PPC_INS_FRE,
+	PPC_FRE_rec, PPC_INS_FRE,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -4435,13 +4533,6 @@
 },
 
 {
-	PPC_FRIMDo, PPC_INS_FRIM,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
-#endif
-},
-
-{
 	PPC_FRIMS, PPC_INS_FRIM,
 #ifndef CAPSTONE_DIET
 	{ PPC_REG_RM, 0 }, { 0 }, { 0 }, 0, 0
@@ -4449,9 +4540,9 @@
 },
 
 {
-	PPC_FRIMSo, PPC_INS_FRIM,
+	PPC_FRIMS_rec, PPC_INS_FRIM,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -4463,13 +4554,6 @@
 },
 
 {
-	PPC_FRINDo, PPC_INS_FRIN,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
-#endif
-},
-
-{
 	PPC_FRINS, PPC_INS_FRIN,
 #ifndef CAPSTONE_DIET
 	{ PPC_REG_RM, 0 }, { 0 }, { 0 }, 0, 0
@@ -4477,9 +4561,9 @@
 },
 
 {
-	PPC_FRINSo, PPC_INS_FRIN,
+	PPC_FRINS_rec, PPC_INS_FRIN,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -4491,13 +4575,6 @@
 },
 
 {
-	PPC_FRIPDo, PPC_INS_FRIP,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
-#endif
-},
-
-{
 	PPC_FRIPS, PPC_INS_FRIP,
 #ifndef CAPSTONE_DIET
 	{ PPC_REG_RM, 0 }, { 0 }, { 0 }, 0, 0
@@ -4505,9 +4582,9 @@
 },
 
 {
-	PPC_FRIPSo, PPC_INS_FRIP,
+	PPC_FRIPS_rec, PPC_INS_FRIP,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -4519,13 +4596,6 @@
 },
 
 {
-	PPC_FRIZDo, PPC_INS_FRIZ,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
-#endif
-},
-
-{
 	PPC_FRIZS, PPC_INS_FRIZ,
 #ifndef CAPSTONE_DIET
 	{ PPC_REG_RM, 0 }, { 0 }, { 0 }, 0, 0
@@ -4533,9 +4603,9 @@
 },
 
 {
-	PPC_FRIZSo, PPC_INS_FRIZ,
+	PPC_FRIZS_rec, PPC_INS_FRIZ,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -4547,9 +4617,9 @@
 },
 
 {
-	PPC_FRSPo, PPC_INS_FRSP,
+	PPC_FRSP_rec, PPC_INS_FRSP,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -4568,16 +4638,16 @@
 },
 
 {
-	PPC_FRSQRTESo, PPC_INS_FRSQRTES,
+	PPC_FRSQRTES_rec, PPC_INS_FRSQRTES,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_FRSQRTEo, PPC_INS_FRSQRTE,
+	PPC_FRSQRTE_rec, PPC_INS_FRSQRTE,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -4589,13 +4659,6 @@
 },
 
 {
-	PPC_FSELDo, PPC_INS_FSEL,
-#ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
-#endif
-},
-
-{
 	PPC_FSELS, PPC_INS_FSEL,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
@@ -4603,9 +4666,9 @@
 },
 
 {
-	PPC_FSELSo, PPC_INS_FSEL,
+	PPC_FSELS_rec, PPC_INS_FSEL,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -4624,16 +4687,16 @@
 },
 
 {
-	PPC_FSQRTSo, PPC_INS_FSQRTS,
+	PPC_FSQRTS_rec, PPC_INS_FSQRTS,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_FSQRTo, PPC_INS_FSQRT,
+	PPC_FSQRT_rec, PPC_INS_FSQRT,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -4652,16 +4715,16 @@
 },
 
 {
-	PPC_FSUBSo, PPC_INS_FSUBS,
+	PPC_FSUBS_rec, PPC_INS_FSUBS,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_FSUBo, PPC_INS_FSUB,
+	PPC_FSUB_rec, PPC_INS_FSUB,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -4743,7 +4806,7 @@
 },
 
 {
-	PPC_ISEL8, PPC_INS_ISEL,
+	PPC_ISEL8, PPC_INS_ISELEQ,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -5513,6 +5576,48 @@
 },
 
 {
+	PPC_LXVP, PPC_INS_LXVP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_LXVPX, PPC_INS_LXVPX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_LXVRBX, PPC_INS_LXVRBX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_LXVRDX, PPC_INS_LXVRDX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_LXVRHX, PPC_INS_LXVRHX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_LXVRWX, PPC_INS_LXVRWX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_LXVW4X, PPC_INS_LXVW4X,
 #ifndef CAPSTONE_DIET
 	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_VSX, 0 }, 0, 0
@@ -5674,9 +5779,9 @@
 },
 
 {
-	PPC_MFFSo, PPC_INS_MFFS,
+	PPC_MFFS_rec, PPC_INS_MFFS,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR1, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -5724,6 +5829,13 @@
 
 {
 	PPC_MFSPR, PPC_INS_MFAMR,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_MFSPR8, PPC_INS_MFAMR,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -5779,6 +5891,13 @@
 },
 
 {
+	PPC_MFVRWZ, PPC_INS_MFVRWZ,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_MFVSCR, PPC_INS_MFVSCR,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { PPC_GRP_ALTIVEC, 0 }, 0, 0
@@ -5800,7 +5919,7 @@
 },
 
 {
-	PPC_MFVSRWZ, PPC_INS_MFVSRWZ,
+	PPC_MFVSRWZ, PPC_INS_MFFPRWZ,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -5849,7 +5968,7 @@
 },
 
 {
-	PPC_MTCRF, PPC_INS_MTCRF,
+	PPC_MTCRF, PPC_INS_MTCR,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -5926,7 +6045,14 @@
 },
 
 {
-	PPC_MTFSFIo, PPC_INS_MTFSFI,
+	PPC_MTFSFI_rec, PPC_INS_MTFSFI,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_MTFSF_rec, PPC_INS_MTFSF,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -5936,13 +6062,6 @@
 	PPC_MTFSFb, PPC_INS_MTFSF,
 #ifndef CAPSTONE_DIET
 	{ PPC_REG_RM, 0 }, { PPC_REG_RM, 0 }, { 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_MTFSFo, PPC_INS_MTFSF,
-#ifndef CAPSTONE_DIET
-	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -6003,6 +6122,13 @@
 },
 
 {
+	PPC_MTSPR8, PPC_INS_MTAMR,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_MTSR, PPC_INS_MTSR,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
@@ -6011,6 +6137,13 @@
 
 {
 	PPC_MTSRIN, PPC_INS_MTSRIN,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_MTVRD, PPC_INS_MTVRD,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -6031,6 +6164,20 @@
 },
 
 {
+	PPC_MTVRWA, PPC_INS_MTVRWA,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_MTVRWZ, PPC_INS_MTVRWZ,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_MTVSCR, PPC_INS_MTVSCR,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { PPC_GRP_ALTIVEC, 0 }, 0, 0
@@ -6038,7 +6185,21 @@
 },
 
 {
-	PPC_MTVSRD, PPC_INS_MTVSRD,
+	PPC_MTVSRBM, PPC_INS_MTVSRBM,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_MTVSRBMI, PPC_INS_MTVSRBMI,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_MTVSRD, PPC_INS_MTFPRD,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -6052,7 +6213,35 @@
 },
 
 {
-	PPC_MTVSRWA, PPC_INS_MTVSRWA,
+	PPC_MTVSRDM, PPC_INS_MTVSRDM,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_MTVSRHM, PPC_INS_MTVSRHM,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_MTVSRQM, PPC_INS_MTVSRQM,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_MTVSRWA, PPC_INS_MTFPRWA,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_MTVSRWM, PPC_INS_MTVSRWM,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -6066,7 +6255,7 @@
 },
 
 {
-	PPC_MTVSRWZ, PPC_INS_MTVSRWZ,
+	PPC_MTVSRWZ, PPC_INS_MTFPRWZ,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -6087,16 +6276,16 @@
 },
 
 {
-	PPC_MULHDUo, PPC_INS_MULHDU,
+	PPC_MULHDU_rec, PPC_INS_MULHDU,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_MULHDo, PPC_INS_MULHD,
+	PPC_MULHD_rec, PPC_INS_MULHD,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -6115,16 +6304,16 @@
 },
 
 {
-	PPC_MULHWUo, PPC_INS_MULHWU,
+	PPC_MULHWU_rec, PPC_INS_MULHWU,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_MULHWo, PPC_INS_MULHW,
+	PPC_MULHW_rec, PPC_INS_MULHW,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -6136,9 +6325,23 @@
 },
 
 {
-	PPC_MULLDo, PPC_INS_MULLD,
+	PPC_MULLDO, PPC_INS_MULLDO,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_MULLDO_rec, PPC_INS_MULLDO,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_MULLD_rec, PPC_INS_MULLD,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -6164,9 +6367,23 @@
 },
 
 {
-	PPC_MULLWo, PPC_INS_MULLW,
+	PPC_MULLWO, PPC_INS_MULLWO,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_MULLWO_rec, PPC_INS_MULLWO,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_MULLW_rec, PPC_INS_MULLW,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -6185,16 +6402,9 @@
 },
 
 {
-	PPC_NAND8o, PPC_INS_NAND,
+	PPC_NAND_rec, PPC_INS_NAND,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_NANDo, PPC_INS_NAND,
-#ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -6220,16 +6430,23 @@
 },
 
 {
-	PPC_NEG8o, PPC_INS_NEG,
+	PPC_NEGO, PPC_INS_NEGO,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_NEGo, PPC_INS_NEG,
+	PPC_NEGO_rec, PPC_INS_NEGO,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_NEG_rec, PPC_INS_NEG,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -6269,21 +6486,21 @@
 },
 
 {
-	PPC_NOR8o, PPC_INS_NOT,
+	PPC_NOR8_rec, PPC_INS_NOT,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_NORo, PPC_INS_NOR,
+	PPC_NOR_rec, PPC_INS_NOR,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_OR, PPC_INS_OR,
+	PPC_OR, PPC_INS_MR,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -6297,9 +6514,9 @@
 },
 
 {
-	PPC_OR8o, PPC_INS_MR,
+	PPC_OR8_rec, PPC_INS_MR,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -6318,28 +6535,21 @@
 },
 
 {
-	PPC_ORC8o, PPC_INS_ORC,
-#ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_ORCo, PPC_INS_ORC,
-#ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_ORI, PPC_INS_ORI,
+	PPC_ORC_rec, PPC_INS_ORC,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_ORI8, PPC_INS_ORI,
+	PPC_ORI, PPC_INS_NOP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_ORI8, PPC_INS_NOP,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -6360,9 +6570,415 @@
 },
 
 {
-	PPC_ORo, PPC_INS_OR,
+	PPC_OR_rec, PPC_INS_MR,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PADDI, PPC_INS_PADDI,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PADDIpc, PPC_INS_PADDI,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PDEPD, PPC_INS_PDEPD,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PEXTD, PPC_INS_PEXTD,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PLBZ, PPC_INS_PLBZ,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PLBZpc, PPC_INS_PLBZ,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PLD, PPC_INS_PLD,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PLDpc, PPC_INS_PLD,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PLFD, PPC_INS_PLFD,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PLFDpc, PPC_INS_PLFD,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PLFS, PPC_INS_PLFS,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PLFSpc, PPC_INS_PLFS,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PLHA, PPC_INS_PLHA,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PLHApc, PPC_INS_PLHA,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PLHZ, PPC_INS_PLHZ,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PLHZpc, PPC_INS_PLHZ,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PLI, PPC_INS_PLI,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PLWA, PPC_INS_PLWA,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PLWApc, PPC_INS_PLWA,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PLWZ, PPC_INS_PLWZ,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PLWZpc, PPC_INS_PLWZ,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PLXSD, PPC_INS_PLXSD,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PLXSDpc, PPC_INS_PLXSD,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PLXSSP, PPC_INS_PLXSSP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PLXSSPpc, PPC_INS_PLXSSP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PLXV, PPC_INS_PLXV,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PLXVP, PPC_INS_PLXVP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PLXVPpc, PPC_INS_PLXVP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PLXVpc, PPC_INS_PLXV,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PMXVBF16GER2, PPC_INS_PMXVBF16GER2,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PMXVBF16GER2NN, PPC_INS_PMXVBF16GER2NN,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PMXVBF16GER2NP, PPC_INS_PMXVBF16GER2NP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PMXVBF16GER2PN, PPC_INS_PMXVBF16GER2PN,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PMXVBF16GER2PP, PPC_INS_PMXVBF16GER2PP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PMXVF16GER2, PPC_INS_PMXVF16GER2,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PMXVF16GER2NN, PPC_INS_PMXVF16GER2NN,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PMXVF16GER2NP, PPC_INS_PMXVF16GER2NP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PMXVF16GER2PN, PPC_INS_PMXVF16GER2PN,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PMXVF16GER2PP, PPC_INS_PMXVF16GER2PP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PMXVF32GER, PPC_INS_PMXVF32GER,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PMXVF32GERNN, PPC_INS_PMXVF32GERNN,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PMXVF32GERNP, PPC_INS_PMXVF32GERNP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PMXVF32GERPN, PPC_INS_PMXVF32GERPN,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PMXVF32GERPP, PPC_INS_PMXVF32GERPP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PMXVF64GER, PPC_INS_PMXVF64GER,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PMXVF64GERNN, PPC_INS_PMXVF64GERNN,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PMXVF64GERNP, PPC_INS_PMXVF64GERNP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PMXVF64GERPN, PPC_INS_PMXVF64GERPN,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PMXVF64GERPP, PPC_INS_PMXVF64GERPP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PMXVI16GER2, PPC_INS_PMXVI16GER2,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PMXVI16GER2PP, PPC_INS_PMXVI16GER2PP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PMXVI16GER2S, PPC_INS_PMXVI16GER2S,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PMXVI16GER2SPP, PPC_INS_PMXVI16GER2SPP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PMXVI4GER8, PPC_INS_PMXVI4GER8,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PMXVI4GER8PP, PPC_INS_PMXVI4GER8PP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PMXVI8GER4, PPC_INS_PMXVI8GER4,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PMXVI8GER4PP, PPC_INS_PMXVI8GER4PP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_PMXVI8GER4SPP, PPC_INS_PMXVI8GER4SPP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -6388,1171 +7004,576 @@
 },
 
 {
-	PPC_QVALIGNI, PPC_INS_QVALIGNI,
+	PPC_PSQ_L, PPC_INS_PSQ_L,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVALIGNIb, PPC_INS_QVALIGNI,
+	PPC_PSQ_LU, PPC_INS_PSQ_LU,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVALIGNIs, PPC_INS_QVALIGNI,
+	PPC_PSQ_LUX, PPC_INS_PSQ_LUX,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVESPLATI, PPC_INS_QVESPLATI,
+	PPC_PSQ_LX, PPC_INS_PSQ_LX,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVESPLATIb, PPC_INS_QVESPLATI,
+	PPC_PSQ_ST, PPC_INS_PSQ_ST,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVESPLATIs, PPC_INS_QVESPLATI,
+	PPC_PSQ_STU, PPC_INS_PSQ_STU,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFABS, PPC_INS_QVFABS,
+	PPC_PSQ_STUX, PPC_INS_PSQ_STUX,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFABSs, PPC_INS_QVFABS,
+	PPC_PSQ_STX, PPC_INS_PSQ_STX,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFADD, PPC_INS_QVFADD,
+	PPC_PSTB, PPC_INS_PSTB,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFADDS, PPC_INS_QVFADDS,
+	PPC_PSTBpc, PPC_INS_PSTB,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFADDSs, PPC_INS_QVFADDS,
+	PPC_PSTD, PPC_INS_PSTD,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFCFID, PPC_INS_QVFCFID,
+	PPC_PSTDpc, PPC_INS_PSTD,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFCFIDS, PPC_INS_QVFCFIDS,
+	PPC_PSTFD, PPC_INS_PSTFD,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFCFIDU, PPC_INS_QVFCFIDU,
+	PPC_PSTFDpc, PPC_INS_PSTFD,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFCFIDUS, PPC_INS_QVFCFIDUS,
+	PPC_PSTFS, PPC_INS_PSTFS,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFCFIDb, PPC_INS_QVFCFID,
+	PPC_PSTFSpc, PPC_INS_PSTFS,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFCMPEQ, PPC_INS_QVFCMPEQ,
+	PPC_PSTH, PPC_INS_PSTH,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFCMPEQb, PPC_INS_QVFCMPEQ,
+	PPC_PSTHpc, PPC_INS_PSTH,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFCMPEQbs, PPC_INS_QVFCMPEQ,
+	PPC_PSTW, PPC_INS_PSTW,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFCMPGT, PPC_INS_QVFCMPGT,
+	PPC_PSTWpc, PPC_INS_PSTW,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFCMPGTb, PPC_INS_QVFCMPGT,
+	PPC_PSTXSD, PPC_INS_PSTXSD,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFCMPGTbs, PPC_INS_QVFCMPGT,
+	PPC_PSTXSDpc, PPC_INS_PSTXSD,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFCMPLT, PPC_INS_QVFCMPLT,
+	PPC_PSTXSSP, PPC_INS_PSTXSSP,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFCMPLTb, PPC_INS_QVFCMPLT,
+	PPC_PSTXSSPpc, PPC_INS_PSTXSSP,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFCMPLTbs, PPC_INS_QVFCMPLT,
+	PPC_PSTXV, PPC_INS_PSTXV,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFCPSGN, PPC_INS_QVFCPSGN,
+	PPC_PSTXVP, PPC_INS_PSTXVP,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFCPSGNs, PPC_INS_QVFCPSGN,
+	PPC_PSTXVPpc, PPC_INS_PSTXVP,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFCTID, PPC_INS_QVFCTID,
+	PPC_PSTXVpc, PPC_INS_PSTXV,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFCTIDU, PPC_INS_QVFCTIDU,
+	PPC_PS_ABS, PPC_INS_PS_ABS,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFCTIDUZ, PPC_INS_QVFCTIDUZ,
+	PPC_PS_ABS_rec, PPC_INS_PS_ABS,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFCTIDZ, PPC_INS_QVFCTIDZ,
+	PPC_PS_ADD, PPC_INS_PS_ADD,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFCTIDb, PPC_INS_QVFCTID,
+	PPC_PS_ADD_rec, PPC_INS_PS_ADD,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFCTIW, PPC_INS_QVFCTIW,
+	PPC_PS_CMPO0, PPC_INS_PS_CMPO0,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFCTIWU, PPC_INS_QVFCTIWU,
+	PPC_PS_CMPO1, PPC_INS_PS_CMPO1,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFCTIWUZ, PPC_INS_QVFCTIWUZ,
+	PPC_PS_CMPU0, PPC_INS_PS_CMPU0,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFCTIWZ, PPC_INS_QVFCTIWZ,
+	PPC_PS_CMPU1, PPC_INS_PS_CMPU1,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFLOGICAL, PPC_INS_QVFLOGICAL,
+	PPC_PS_DIV, PPC_INS_PS_DIV,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFLOGICALb, PPC_INS_QVFAND,
+	PPC_PS_DIV_rec, PPC_INS_PS_DIV,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFLOGICALs, PPC_INS_QVFLOGICAL,
+	PPC_PS_MADD, PPC_INS_PS_MADD,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFMADD, PPC_INS_QVFMADD,
+	PPC_PS_MADDS0, PPC_INS_PS_MADDS0,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFMADDS, PPC_INS_QVFMADDS,
+	PPC_PS_MADDS0_rec, PPC_INS_PS_MADDS0,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFMADDSs, PPC_INS_QVFMADDS,
+	PPC_PS_MADDS1, PPC_INS_PS_MADDS1,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFMR, PPC_INS_QVFMR,
+	PPC_PS_MADDS1_rec, PPC_INS_PS_MADDS1,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFMRb, PPC_INS_QVFMR,
+	PPC_PS_MADD_rec, PPC_INS_PS_MADD,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFMRs, PPC_INS_QVFMR,
+	PPC_PS_MERGE00, PPC_INS_PS_MERGE00,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFMSUB, PPC_INS_QVFMSUB,
+	PPC_PS_MERGE00_rec, PPC_INS_PS_MERGE00,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFMSUBS, PPC_INS_QVFMSUBS,
+	PPC_PS_MERGE01, PPC_INS_PS_MERGE01,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFMSUBSs, PPC_INS_QVFMSUBS,
+	PPC_PS_MERGE01_rec, PPC_INS_PS_MERGE01,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFMUL, PPC_INS_QVFMUL,
+	PPC_PS_MERGE10, PPC_INS_PS_MERGE10,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFMULS, PPC_INS_QVFMULS,
+	PPC_PS_MERGE10_rec, PPC_INS_PS_MERGE10,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFMULSs, PPC_INS_QVFMULS,
+	PPC_PS_MERGE11, PPC_INS_PS_MERGE11,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFNABS, PPC_INS_QVFNABS,
+	PPC_PS_MERGE11_rec, PPC_INS_PS_MERGE11,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFNABSs, PPC_INS_QVFNABS,
+	PPC_PS_MR, PPC_INS_PS_MR,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFNEG, PPC_INS_QVFNEG,
+	PPC_PS_MR_rec, PPC_INS_PS_MR,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFNEGs, PPC_INS_QVFNEG,
+	PPC_PS_MSUB, PPC_INS_PS_MSUB,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFNMADD, PPC_INS_QVFNMADD,
+	PPC_PS_MSUB_rec, PPC_INS_PS_MSUB,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFNMADDS, PPC_INS_QVFNMADDS,
+	PPC_PS_MUL, PPC_INS_PS_MUL,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFNMADDSs, PPC_INS_QVFNMADDS,
+	PPC_PS_MULS0, PPC_INS_PS_MULS0,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFNMSUB, PPC_INS_QVFNMSUB,
+	PPC_PS_MULS0_rec, PPC_INS_PS_MULS0,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFNMSUBS, PPC_INS_QVFNMSUBS,
+	PPC_PS_MULS1, PPC_INS_PS_MULS1,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFNMSUBSs, PPC_INS_QVFNMSUBS,
+	PPC_PS_MULS1_rec, PPC_INS_PS_MULS1,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFPERM, PPC_INS_QVFPERM,
+	PPC_PS_MUL_rec, PPC_INS_PS_MUL,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFPERMs, PPC_INS_QVFPERM,
+	PPC_PS_NABS, PPC_INS_PS_NABS,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFRE, PPC_INS_QVFRE,
+	PPC_PS_NABS_rec, PPC_INS_PS_NABS,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFRES, PPC_INS_QVFRES,
+	PPC_PS_NEG, PPC_INS_PS_NEG,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFRESs, PPC_INS_QVFRES,
+	PPC_PS_NEG_rec, PPC_INS_PS_NEG,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFRIM, PPC_INS_QVFRIM,
+	PPC_PS_NMADD, PPC_INS_PS_NMADD,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFRIMs, PPC_INS_QVFRIM,
+	PPC_PS_NMADD_rec, PPC_INS_PS_NMADD,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFRIN, PPC_INS_QVFRIN,
+	PPC_PS_NMSUB, PPC_INS_PS_NMSUB,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFRINs, PPC_INS_QVFRIN,
+	PPC_PS_NMSUB_rec, PPC_INS_PS_NMSUB,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFRIP, PPC_INS_QVFRIP,
+	PPC_PS_RES, PPC_INS_PS_RES,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFRIPs, PPC_INS_QVFRIP,
+	PPC_PS_RES_rec, PPC_INS_PS_RES,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFRIZ, PPC_INS_QVFRIZ,
+	PPC_PS_RSQRTE, PPC_INS_PS_RSQRTE,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFRIZs, PPC_INS_QVFRIZ,
+	PPC_PS_RSQRTE_rec, PPC_INS_PS_RSQRTE,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFRSP, PPC_INS_QVFRSP,
+	PPC_PS_SEL, PPC_INS_PS_SEL,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFRSPs, PPC_INS_QVFRSP,
+	PPC_PS_SEL_rec, PPC_INS_PS_SEL,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFRSQRTE, PPC_INS_QVFRSQRTE,
+	PPC_PS_SUB, PPC_INS_PS_SUB,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFRSQRTES, PPC_INS_QVFRSQRTES,
+	PPC_PS_SUB_rec, PPC_INS_PS_SUB,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFRSQRTESs, PPC_INS_QVFRSQRTES,
+	PPC_PS_SUM0, PPC_INS_PS_SUM0,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFSEL, PPC_INS_QVFSEL,
+	PPC_PS_SUM0_rec, PPC_INS_PS_SUM0,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFSELb, PPC_INS_QVFSEL,
+	PPC_PS_SUM1, PPC_INS_PS_SUM1,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_QVFSELbb, PPC_INS_QVFSEL,
+	PPC_PS_SUM1_rec, PPC_INS_PS_SUM1,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVFSELbs, PPC_INS_QVFSEL,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVFSUB, PPC_INS_QVFSUB,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVFSUBS, PPC_INS_QVFSUBS,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVFSUBSs, PPC_INS_QVFSUBS,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVFTSTNAN, PPC_INS_QVFTSTNAN,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVFTSTNANb, PPC_INS_QVFTSTNAN,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVFTSTNANbs, PPC_INS_QVFTSTNAN,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVFXMADD, PPC_INS_QVFXMADD,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVFXMADDS, PPC_INS_QVFXMADDS,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVFXMUL, PPC_INS_QVFXMUL,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVFXMULS, PPC_INS_QVFXMULS,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVFXXCPNMADD, PPC_INS_QVFXXCPNMADD,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVFXXCPNMADDS, PPC_INS_QVFXXCPNMADDS,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVFXXMADD, PPC_INS_QVFXXMADD,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVFXXMADDS, PPC_INS_QVFXXMADDS,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVFXXNPMADD, PPC_INS_QVFXXNPMADD,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVFXXNPMADDS, PPC_INS_QVFXXNPMADDS,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVGPCI, PPC_INS_QVGPCI,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVLFCDUX, PPC_INS_QVLFCDUX,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVLFCDUXA, PPC_INS_QVLFCDUXA,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVLFCDX, PPC_INS_QVLFCDX,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVLFCDXA, PPC_INS_QVLFCDXA,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVLFCSUX, PPC_INS_QVLFCSUX,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVLFCSUXA, PPC_INS_QVLFCSUXA,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVLFCSX, PPC_INS_QVLFCSX,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVLFCSXA, PPC_INS_QVLFCSXA,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVLFCSXs, PPC_INS_QVLFCSX,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVLFDUX, PPC_INS_QVLFDUX,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVLFDUXA, PPC_INS_QVLFDUXA,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVLFDX, PPC_INS_QVLFDX,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVLFDXA, PPC_INS_QVLFDXA,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVLFDXb, PPC_INS_QVLFDX,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVLFIWAX, PPC_INS_QVLFIWAX,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVLFIWAXA, PPC_INS_QVLFIWAXA,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVLFIWZX, PPC_INS_QVLFIWZX,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVLFIWZXA, PPC_INS_QVLFIWZXA,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVLFSUX, PPC_INS_QVLFSUX,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVLFSUXA, PPC_INS_QVLFSUXA,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVLFSX, PPC_INS_QVLFSX,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVLFSXA, PPC_INS_QVLFSXA,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVLFSXb, PPC_INS_QVLFSX,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVLFSXs, PPC_INS_QVLFSX,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVLPCLDX, PPC_INS_QVLPCLDX,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVLPCLSX, PPC_INS_QVLPCLSX,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVLPCLSXint, PPC_INS_QVLPCLSX,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVLPCRDX, PPC_INS_QVLPCRDX,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVLPCRSX, PPC_INS_QVLPCRSX,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFCDUX, PPC_INS_QVSTFCDUX,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFCDUXA, PPC_INS_QVSTFCDUXA,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFCDUXI, PPC_INS_QVSTFCDUXI,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFCDUXIA, PPC_INS_QVSTFCDUXIA,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFCDX, PPC_INS_QVSTFCDX,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFCDXA, PPC_INS_QVSTFCDXA,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFCDXI, PPC_INS_QVSTFCDXI,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFCDXIA, PPC_INS_QVSTFCDXIA,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFCSUX, PPC_INS_QVSTFCSUX,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFCSUXA, PPC_INS_QVSTFCSUXA,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFCSUXI, PPC_INS_QVSTFCSUXI,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFCSUXIA, PPC_INS_QVSTFCSUXIA,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFCSX, PPC_INS_QVSTFCSX,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFCSXA, PPC_INS_QVSTFCSXA,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFCSXI, PPC_INS_QVSTFCSXI,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFCSXIA, PPC_INS_QVSTFCSXIA,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFCSXs, PPC_INS_QVSTFCSX,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFDUX, PPC_INS_QVSTFDUX,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFDUXA, PPC_INS_QVSTFDUXA,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFDUXI, PPC_INS_QVSTFDUXI,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFDUXIA, PPC_INS_QVSTFDUXIA,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFDX, PPC_INS_QVSTFDX,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFDXA, PPC_INS_QVSTFDXA,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFDXI, PPC_INS_QVSTFDXI,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFDXIA, PPC_INS_QVSTFDXIA,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFDXb, PPC_INS_QVSTFDX,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFIWX, PPC_INS_QVSTFIWX,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFIWXA, PPC_INS_QVSTFIWXA,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFSUX, PPC_INS_QVSTFSUX,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFSUXA, PPC_INS_QVSTFSUXA,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFSUXI, PPC_INS_QVSTFSUXI,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFSUXIA, PPC_INS_QVSTFSUXIA,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFSUXs, PPC_INS_QVSTFSUX,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFSX, PPC_INS_QVSTFSX,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFSXA, PPC_INS_QVSTFSXA,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFSXI, PPC_INS_QVSTFSXI,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFSXIA, PPC_INS_QVSTFSXIA,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_QVSTFSXs, PPC_INS_QVSTFSX,
-#ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_QPX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -7606,9 +7627,9 @@
 },
 
 {
-	PPC_RLDCLo, PPC_INS_RLDCL,
+	PPC_RLDCL_rec, PPC_INS_RLDCL,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -7620,9 +7641,9 @@
 },
 
 {
-	PPC_RLDCRo, PPC_INS_RLDCR,
+	PPC_RLDCR_rec, PPC_INS_RLDCR,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -7648,9 +7669,9 @@
 },
 
 {
-	PPC_RLDICLo, PPC_INS_CLRLDI,
+	PPC_RLDICL_rec, PPC_INS_CLRLDI,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -7662,16 +7683,16 @@
 },
 
 {
-	PPC_RLDICRo, PPC_INS_RLDICR,
+	PPC_RLDICR_rec, PPC_INS_RLDICR,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_RLDICo, PPC_INS_RLDIC,
+	PPC_RLDIC_rec, PPC_INS_RLDIC,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -7683,9 +7704,9 @@
 },
 
 {
-	PPC_RLDIMIo, PPC_INS_RLDIMI,
+	PPC_RLDIMI_rec, PPC_INS_RLDIMI,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -7704,16 +7725,9 @@
 },
 
 {
-	PPC_RLWIMI8o, PPC_INS_RLWIMI,
+	PPC_RLWIMI_rec, PPC_INS_RLWIMI,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_RLWIMIo, PPC_INS_RLWIMI,
-#ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -7725,23 +7739,23 @@
 },
 
 {
-	PPC_RLWINM8, PPC_INS_RLWINM,
+	PPC_RLWINM8, PPC_INS_CLRLWI,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_RLWINM8o, PPC_INS_RLWINM,
+	PPC_RLWINM8_rec, PPC_INS_CLRLWI,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_RLWINMo, PPC_INS_CLRLWI,
+	PPC_RLWINM_rec, PPC_INS_CLRLWI,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -7753,23 +7767,23 @@
 },
 
 {
-	PPC_RLWNM8, PPC_INS_RLWNM,
+	PPC_RLWNM8, PPC_INS_ROTLW,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_RLWNM8o, PPC_INS_RLWNM,
+	PPC_RLWNM8_rec, PPC_INS_ROTLW,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_RLWNMo, PPC_INS_RLWNM,
+	PPC_RLWNM_rec, PPC_INS_RLWNM,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -7782,6 +7796,41 @@
 
 {
 	PPC_SETB, PPC_INS_SETB,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_SETBC, PPC_INS_SETBC,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_SETBCR, PPC_INS_SETBCR,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_SETNBC, PPC_INS_SETNBC,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_SETNBCR, PPC_INS_SETNBCR,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_SLBFEE_rec, PPC_INS_SLBFEE,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -7844,9 +7893,9 @@
 },
 
 {
-	PPC_SLDo, PPC_INS_SLD,
+	PPC_SLD_rec, PPC_INS_SLD,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -7865,16 +7914,9 @@
 },
 
 {
-	PPC_SLW8o, PPC_INS_SLW,
+	PPC_SLW_rec, PPC_INS_SLW,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_SLWo, PPC_INS_SLW,
-#ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -7921,16 +7963,16 @@
 },
 
 {
-	PPC_SRADIo, PPC_INS_SRADI,
+	PPC_SRADI_rec, PPC_INS_SRADI,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CARRY, PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_SRADo, PPC_INS_SRAD,
+	PPC_SRAD_rec, PPC_INS_SRAD,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CARRY, PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -7949,16 +7991,16 @@
 },
 
 {
-	PPC_SRAWIo, PPC_INS_SRAWI,
+	PPC_SRAWI_rec, PPC_INS_SRAWI,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CARRY, PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_SRAWo, PPC_INS_SRAW,
+	PPC_SRAW_rec, PPC_INS_SRAW,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CARRY, PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -7970,9 +8012,9 @@
 },
 
 {
-	PPC_SRDo, PPC_INS_SRD,
+	PPC_SRD_rec, PPC_INS_SRD,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -7991,16 +8033,9 @@
 },
 
 {
-	PPC_SRW8o, PPC_INS_SRW,
+	PPC_SRW_rec, PPC_INS_SRW,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_SRWo, PPC_INS_SRW,
-#ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -8558,6 +8593,48 @@
 },
 
 {
+	PPC_STXVP, PPC_INS_STXVP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_STXVPX, PPC_INS_STXVPX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_STXVRBX, PPC_INS_STXVRBX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_STXVRDX, PPC_INS_STXVRDX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_STXVRHX, PPC_INS_STXVRHX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_STXVRWX, PPC_INS_STXVRWX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_STXVW4X, PPC_INS_STXVW4X,
 #ifndef CAPSTONE_DIET
 	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_VSX, 0 }, 0, 0
@@ -8572,7 +8649,7 @@
 },
 
 {
-	PPC_SUBF, PPC_INS_SUBF,
+	PPC_SUBF, PPC_INS_SUB,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -8586,14 +8663,14 @@
 },
 
 {
-	PPC_SUBF8o, PPC_INS_SUB,
+	PPC_SUBF8_rec, PPC_INS_SUB,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_SUBFC, PPC_INS_SUBFC,
+	PPC_SUBFC, PPC_INS_SUBC,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { PPC_REG_CARRY, 0 }, { 0 }, 0, 0
 #endif
@@ -8607,16 +8684,30 @@
 },
 
 {
-	PPC_SUBFC8o, PPC_INS_SUBC,
+	PPC_SUBFC8_rec, PPC_INS_SUBC,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CARRY, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_SUBFCo, PPC_INS_SUBFC,
+	PPC_SUBFCO, PPC_INS_SUBFCO,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CARRY, PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_SUBFCO_rec, PPC_INS_SUBFCO,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_SUBFC_rec, PPC_INS_SUBC,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -8635,16 +8726,23 @@
 },
 
 {
-	PPC_SUBFE8o, PPC_INS_SUBFE,
+	PPC_SUBFEO, PPC_INS_SUBFEO,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_CARRY, 0 }, { PPC_REG_CARRY, PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_SUBFEo, PPC_INS_SUBFE,
+	PPC_SUBFEO_rec, PPC_INS_SUBFEO,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_CARRY, 0 }, { PPC_REG_CARRY, PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_SUBFE_rec, PPC_INS_SUBFE,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -8677,16 +8775,37 @@
 },
 
 {
-	PPC_SUBFME8o, PPC_INS_SUBFME,
+	PPC_SUBFMEO, PPC_INS_SUBFMEO,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_CARRY, 0 }, { PPC_REG_CARRY, PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_SUBFMEo, PPC_INS_SUBFME,
+	PPC_SUBFMEO_rec, PPC_INS_SUBFMEO,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_CARRY, 0 }, { PPC_REG_CARRY, PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_SUBFME_rec, PPC_INS_SUBFME,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_SUBFO, PPC_INS_SUBFO,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_SUBFO_rec, PPC_INS_SUBFO,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -8705,23 +8824,30 @@
 },
 
 {
-	PPC_SUBFZE8o, PPC_INS_SUBFZE,
+	PPC_SUBFZEO, PPC_INS_SUBFZEO,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_CARRY, 0 }, { PPC_REG_CARRY, PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_SUBFZEo, PPC_INS_SUBFZE,
+	PPC_SUBFZEO_rec, PPC_INS_SUBFZEO,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_CARRY, 0 }, { PPC_REG_CARRY, PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_SUBFo, PPC_INS_SUBF,
+	PPC_SUBFZE_rec, PPC_INS_SUBFZE,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_SUBF_rec, PPC_INS_SUB,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -8964,14 +9090,14 @@
 },
 
 {
-	PPC_TSR, PPC_INS_TSR,
+	PPC_TSR, PPC_INS_TRESUME,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_TW, PPC_INS_TW,
+	PPC_TW, PPC_INS_TRAP,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -9202,6 +9328,13 @@
 },
 
 {
+	PPC_VCFUGED, PPC_INS_VCFUGED,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_VCFUX, PPC_INS_VCFUX,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { PPC_GRP_ALTIVEC, 0 }, 0, 0
@@ -9230,6 +9363,20 @@
 },
 
 {
+	PPC_VCLRLB, PPC_INS_VCLRLB,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VCLRRB, PPC_INS_VCLRRB,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_VCLZB, PPC_INS_VCLZB,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { PPC_GRP_P8ALTIVEC, 0 }, 0, 0
@@ -9240,6 +9387,13 @@
 	PPC_VCLZD, PPC_INS_VCLZD,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { PPC_GRP_P8ALTIVEC, 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VCLZDM, PPC_INS_VCLZDM,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -9272,9 +9426,9 @@
 },
 
 {
-	PPC_VCMPBFPo, PPC_INS_VCMPBFP,
+	PPC_VCMPBFP_rec, PPC_INS_VCMPBFP,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR6, 0 }, { PPC_GRP_ALTIVEC, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -9286,9 +9440,9 @@
 },
 
 {
-	PPC_VCMPEQFPo, PPC_INS_VCMPEQFP,
+	PPC_VCMPEQFP_rec, PPC_INS_VCMPEQFP,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR6, 0 }, { PPC_GRP_ALTIVEC, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -9300,9 +9454,9 @@
 },
 
 {
-	PPC_VCMPEQUBo, PPC_INS_VCMPEQUB,
+	PPC_VCMPEQUB_rec, PPC_INS_VCMPEQUB,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR6, 0 }, { PPC_GRP_ALTIVEC, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -9314,9 +9468,9 @@
 },
 
 {
-	PPC_VCMPEQUDo, PPC_INS_VCMPEQUD,
+	PPC_VCMPEQUD_rec, PPC_INS_VCMPEQUD,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR6, 0 }, { PPC_GRP_P8ALTIVEC, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -9328,9 +9482,23 @@
 },
 
 {
-	PPC_VCMPEQUHo, PPC_INS_VCMPEQUH,
+	PPC_VCMPEQUH_rec, PPC_INS_VCMPEQUH,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR6, 0 }, { PPC_GRP_ALTIVEC, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VCMPEQUQ, PPC_INS_VCMPEQUQ,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VCMPEQUQ_rec, PPC_INS_VCMPEQUQ,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -9342,9 +9510,9 @@
 },
 
 {
-	PPC_VCMPEQUWo, PPC_INS_VCMPEQUW,
+	PPC_VCMPEQUW_rec, PPC_INS_VCMPEQUW,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR6, 0 }, { PPC_GRP_ALTIVEC, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -9356,9 +9524,9 @@
 },
 
 {
-	PPC_VCMPGEFPo, PPC_INS_VCMPGEFP,
+	PPC_VCMPGEFP_rec, PPC_INS_VCMPGEFP,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR6, 0 }, { PPC_GRP_ALTIVEC, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -9370,9 +9538,9 @@
 },
 
 {
-	PPC_VCMPGTFPo, PPC_INS_VCMPGTFP,
+	PPC_VCMPGTFP_rec, PPC_INS_VCMPGTFP,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR6, 0 }, { PPC_GRP_ALTIVEC, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -9384,9 +9552,9 @@
 },
 
 {
-	PPC_VCMPGTSBo, PPC_INS_VCMPGTSB,
+	PPC_VCMPGTSB_rec, PPC_INS_VCMPGTSB,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR6, 0 }, { PPC_GRP_ALTIVEC, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -9398,9 +9566,9 @@
 },
 
 {
-	PPC_VCMPGTSDo, PPC_INS_VCMPGTSD,
+	PPC_VCMPGTSD_rec, PPC_INS_VCMPGTSD,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR6, 0 }, { PPC_GRP_P8ALTIVEC, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -9412,9 +9580,23 @@
 },
 
 {
-	PPC_VCMPGTSHo, PPC_INS_VCMPGTSH,
+	PPC_VCMPGTSH_rec, PPC_INS_VCMPGTSH,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR6, 0 }, { PPC_GRP_ALTIVEC, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VCMPGTSQ, PPC_INS_VCMPGTSQ,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VCMPGTSQ_rec, PPC_INS_VCMPGTSQ,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -9426,9 +9608,9 @@
 },
 
 {
-	PPC_VCMPGTSWo, PPC_INS_VCMPGTSW,
+	PPC_VCMPGTSW_rec, PPC_INS_VCMPGTSW,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR6, 0 }, { PPC_GRP_ALTIVEC, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -9440,9 +9622,9 @@
 },
 
 {
-	PPC_VCMPGTUBo, PPC_INS_VCMPGTUB,
+	PPC_VCMPGTUB_rec, PPC_INS_VCMPGTUB,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR6, 0 }, { PPC_GRP_ALTIVEC, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -9454,9 +9636,9 @@
 },
 
 {
-	PPC_VCMPGTUDo, PPC_INS_VCMPGTUD,
+	PPC_VCMPGTUD_rec, PPC_INS_VCMPGTUD,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR6, 0 }, { PPC_GRP_P8ALTIVEC, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -9468,9 +9650,23 @@
 },
 
 {
-	PPC_VCMPGTUHo, PPC_INS_VCMPGTUH,
+	PPC_VCMPGTUH_rec, PPC_INS_VCMPGTUH,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR6, 0 }, { PPC_GRP_ALTIVEC, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VCMPGTUQ, PPC_INS_VCMPGTUQ,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VCMPGTUQ_rec, PPC_INS_VCMPGTUQ,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -9482,9 +9678,9 @@
 },
 
 {
-	PPC_VCMPGTUWo, PPC_INS_VCMPGTUW,
+	PPC_VCMPGTUW_rec, PPC_INS_VCMPGTUW,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR6, 0 }, { PPC_GRP_ALTIVEC, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -9496,7 +9692,7 @@
 },
 
 {
-	PPC_VCMPNEBo, PPC_INS_VCMPNEB,
+	PPC_VCMPNEB_rec, PPC_INS_VCMPNEB,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -9510,7 +9706,7 @@
 },
 
 {
-	PPC_VCMPNEHo, PPC_INS_VCMPNEH,
+	PPC_VCMPNEH_rec, PPC_INS_VCMPNEH,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -9524,7 +9720,7 @@
 },
 
 {
-	PPC_VCMPNEWo, PPC_INS_VCMPNEW,
+	PPC_VCMPNEW_rec, PPC_INS_VCMPNEW,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -9538,7 +9734,7 @@
 },
 
 {
-	PPC_VCMPNEZBo, PPC_INS_VCMPNEZB,
+	PPC_VCMPNEZB_rec, PPC_INS_VCMPNEZB,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -9552,7 +9748,7 @@
 },
 
 {
-	PPC_VCMPNEZHo, PPC_INS_VCMPNEZH,
+	PPC_VCMPNEZH_rec, PPC_INS_VCMPNEZH,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -9566,7 +9762,49 @@
 },
 
 {
-	PPC_VCMPNEZWo, PPC_INS_VCMPNEZW,
+	PPC_VCMPNEZW_rec, PPC_INS_VCMPNEZW,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VCMPSQ, PPC_INS_VCMPSQ,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VCMPUQ, PPC_INS_VCMPUQ,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VCNTMBB, PPC_INS_VCNTMBB,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VCNTMBD, PPC_INS_VCNTMBD,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VCNTMBH, PPC_INS_VCNTMBH,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VCNTMBW, PPC_INS_VCNTMBW,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -9615,6 +9853,13 @@
 },
 
 {
+	PPC_VCTZDM, PPC_INS_VCTZDM,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_VCTZH, PPC_INS_VCTZH,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
@@ -9636,9 +9881,128 @@
 },
 
 {
+	PPC_VDIVESD, PPC_INS_VDIVESD,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VDIVESQ, PPC_INS_VDIVESQ,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VDIVESW, PPC_INS_VDIVESW,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VDIVEUD, PPC_INS_VDIVEUD,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VDIVEUQ, PPC_INS_VDIVEUQ,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VDIVEUW, PPC_INS_VDIVEUW,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VDIVSD, PPC_INS_VDIVSD,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VDIVSQ, PPC_INS_VDIVSQ,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VDIVSW, PPC_INS_VDIVSW,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VDIVUD, PPC_INS_VDIVUD,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VDIVUQ, PPC_INS_VDIVUQ,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VDIVUW, PPC_INS_VDIVUW,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_VEQV, PPC_INS_VEQV,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { PPC_GRP_P8ALTIVEC, 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VEXPANDBM, PPC_INS_VEXPANDBM,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VEXPANDDM, PPC_INS_VEXPANDDM,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VEXPANDHM, PPC_INS_VEXPANDHM,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VEXPANDQM, PPC_INS_VEXPANDQM,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VEXPANDWM, PPC_INS_VEXPANDWM,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -9650,7 +10014,91 @@
 },
 
 {
+	PPC_VEXTDDVLX, PPC_INS_VEXTDDVLX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VEXTDDVRX, PPC_INS_VEXTDDVRX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VEXTDUBVLX, PPC_INS_VEXTDUBVLX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VEXTDUBVRX, PPC_INS_VEXTDUBVRX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VEXTDUHVLX, PPC_INS_VEXTDUHVLX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VEXTDUHVRX, PPC_INS_VEXTDUHVRX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VEXTDUWVLX, PPC_INS_VEXTDUWVLX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VEXTDUWVRX, PPC_INS_VEXTDUWVRX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VEXTRACTBM, PPC_INS_VEXTRACTBM,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_VEXTRACTD, PPC_INS_VEXTRACTD,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VEXTRACTDM, PPC_INS_VEXTRACTDM,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VEXTRACTHM, PPC_INS_VEXTRACTHM,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VEXTRACTQM, PPC_INS_VEXTRACTQM,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -9678,6 +10126,13 @@
 },
 
 {
+	PPC_VEXTRACTWM, PPC_INS_VEXTRACTWM,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_VEXTSB2D, PPC_INS_VEXTSB2D,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
@@ -9686,6 +10141,13 @@
 
 {
 	PPC_VEXTSB2W, PPC_INS_VEXTSB2W,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VEXTSD2Q, PPC_INS_VEXTSD2Q,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -9762,6 +10224,62 @@
 },
 
 {
+	PPC_VGNB, PPC_INS_VGNB,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VINSBLX, PPC_INS_VINSBLX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VINSBRX, PPC_INS_VINSBRX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VINSBVLX, PPC_INS_VINSBVLX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VINSBVRX, PPC_INS_VINSBVRX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VINSD, PPC_INS_VINSD,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VINSDLX, PPC_INS_VINSDLX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VINSDRX, PPC_INS_VINSDRX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_VINSERTB, PPC_INS_VINSERTB,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
@@ -9784,6 +10302,69 @@
 
 {
 	PPC_VINSERTW, PPC_INS_VINSERTW,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VINSHLX, PPC_INS_VINSHLX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VINSHRX, PPC_INS_VINSHRX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VINSHVLX, PPC_INS_VINSHVLX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VINSHVRX, PPC_INS_VINSHVRX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VINSW, PPC_INS_VINSW,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VINSWLX, PPC_INS_VINSWLX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VINSWRX, PPC_INS_VINSWRX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VINSWVLX, PPC_INS_VINSWVLX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VINSWVRX, PPC_INS_VINSWVRX,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -9951,6 +10532,48 @@
 },
 
 {
+	PPC_VMODSD, PPC_INS_VMODSD,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VMODSQ, PPC_INS_VMODSQ,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VMODSW, PPC_INS_VMODSW,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VMODUD, PPC_INS_VMODUD,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VMODUQ, PPC_INS_VMODUQ,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VMODUW, PPC_INS_VMODUW,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_VMRGEW, PPC_INS_VMRGEW,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
@@ -10007,6 +10630,13 @@
 },
 
 {
+	PPC_VMSUMCUD, PPC_INS_VMSUMCUD,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_VMSUMMBM, PPC_INS_VMSUMMBM,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { PPC_GRP_ALTIVEC, 0 }, 0, 0
@@ -10031,6 +10661,13 @@
 	PPC_VMSUMUBM, PPC_INS_VMSUMUBM,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { PPC_GRP_ALTIVEC, 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VMSUMUDM, PPC_INS_VMSUMUDM,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -10084,6 +10721,13 @@
 },
 
 {
+	PPC_VMULESD, PPC_INS_VMULESD,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_VMULESH, PPC_INS_VMULESH,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { PPC_GRP_ALTIVEC, 0 }, 0, 0
@@ -10105,6 +10749,13 @@
 },
 
 {
+	PPC_VMULEUD, PPC_INS_VMULEUD,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_VMULEUH, PPC_INS_VMULEUH,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { PPC_GRP_ALTIVEC, 0 }, 0, 0
@@ -10119,9 +10770,51 @@
 },
 
 {
+	PPC_VMULHSD, PPC_INS_VMULHSD,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VMULHSW, PPC_INS_VMULHSW,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VMULHUD, PPC_INS_VMULHUD,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VMULHUW, PPC_INS_VMULHUW,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VMULLD, PPC_INS_VMULLD,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_VMULOSB, PPC_INS_VMULOSB,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { PPC_GRP_ALTIVEC, 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VMULOSD, PPC_INS_VMULOSD,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -10143,6 +10836,13 @@
 	PPC_VMULOUB, PPC_INS_VMULOUB,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { PPC_GRP_ALTIVEC, 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VMULOUD, PPC_INS_VMULOUD,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -10217,7 +10917,7 @@
 },
 
 {
-	PPC_VOR, PPC_INS_VOR,
+	PPC_VOR, PPC_INS_VMR,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { PPC_GRP_ALTIVEC, 0 }, 0, 0
 #endif
@@ -10227,6 +10927,13 @@
 	PPC_VORC, PPC_INS_VORC,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { PPC_GRP_P8ALTIVEC, 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VPDEPD, PPC_INS_VPDEPD,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -10246,6 +10953,13 @@
 
 {
 	PPC_VPERMXOR, PPC_INS_VPERMXOR,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VPEXTD, PPC_INS_VPEXTD,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -10490,6 +11204,27 @@
 },
 
 {
+	PPC_VRLQ, PPC_INS_VRLQ,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VRLQMI, PPC_INS_VRLQMI,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VRLQNM, PPC_INS_VRLQNM,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_VRLW, PPC_INS_VRLW,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { PPC_GRP_ALTIVEC, 0 }, 0, 0
@@ -10567,6 +11302,13 @@
 },
 
 {
+	PPC_VSLDBI, PPC_INS_VSLDBI,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_VSLDOI, PPC_INS_VSLDOI,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { PPC_GRP_ALTIVEC, 0 }, 0, 0
@@ -10584,6 +11326,13 @@
 	PPC_VSLO, PPC_INS_VSLO,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { PPC_GRP_ALTIVEC, 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VSLQ, PPC_INS_VSLQ,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -10672,6 +11421,13 @@
 },
 
 {
+	PPC_VSRAQ, PPC_INS_VSRAQ,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_VSRAW, PPC_INS_VSRAW,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { PPC_GRP_ALTIVEC, 0 }, 0, 0
@@ -10693,6 +11449,13 @@
 },
 
 {
+	PPC_VSRDBI, PPC_INS_VSRDBI,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_VSRH, PPC_INS_VSRH,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { PPC_GRP_ALTIVEC, 0 }, 0, 0
@@ -10707,6 +11470,13 @@
 },
 
 {
+	PPC_VSRQ, PPC_INS_VSRQ,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_VSRV, PPC_INS_VSRV,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
@@ -10717,6 +11487,62 @@
 	PPC_VSRW, PPC_INS_VSRW,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { PPC_GRP_ALTIVEC, 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VSTRIBL, PPC_INS_VSTRIBL,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VSTRIBL_rec, PPC_INS_VSTRIBL,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VSTRIBR, PPC_INS_VSTRIBR,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VSTRIBR_rec, PPC_INS_VSTRIBR,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VSTRIHL, PPC_INS_VSTRIHL,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VSTRIHL_rec, PPC_INS_VSTRIHL,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VSTRIHR, PPC_INS_VSTRIHR,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_VSTRIHR_rec, PPC_INS_VSTRIHR,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -11008,21 +11834,14 @@
 },
 
 {
-	PPC_XOR8o, PPC_INS_XOR,
-#ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
-#endif
-},
-
-{
-	PPC_XORI, PPC_INS_XORI,
+	PPC_XORI, PPC_INS_XNOP,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
 {
-	PPC_XORI8, PPC_INS_XORI,
+	PPC_XORI8, PPC_INS_XNOP,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -11043,9 +11862,9 @@
 },
 
 {
-	PPC_XORo, PPC_INS_XOR,
+	PPC_XOR_rec, PPC_INS_XOR,
 #ifndef CAPSTONE_DIET
-	{ 0 }, { PPC_REG_CR0, 0 }, { 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -11253,6 +12072,13 @@
 },
 
 {
+	PPC_XSCVQPSQZ, PPC_INS_XSCVQPSQZ,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_XSCVQPSWZ, PPC_INS_XSCVQPSWZ,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
@@ -11261,6 +12087,13 @@
 
 {
 	PPC_XSCVQPUDZ, PPC_INS_XSCVQPUDZ,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XSCVQPUQZ, PPC_INS_XSCVQPUQZ,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -11295,6 +12128,13 @@
 },
 
 {
+	PPC_XSCVSQQP, PPC_INS_XSCVSQQP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_XSCVSXDDP, PPC_INS_XSCVSXDDP,
 #ifndef CAPSTONE_DIET
 	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_VSX, 0 }, 0, 0
@@ -11310,6 +12150,13 @@
 
 {
 	PPC_XSCVUDQP, PPC_INS_XSCVUDQP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XSCVUQQP, PPC_INS_XSCVUQQP,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -11876,6 +12723,41 @@
 },
 
 {
+	PPC_XVBF16GER2, PPC_INS_XVBF16GER2,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XVBF16GER2NN, PPC_INS_XVBF16GER2NN,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XVBF16GER2NP, PPC_INS_XVBF16GER2NP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XVBF16GER2PN, PPC_INS_XVBF16GER2PN,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XVBF16GER2PP, PPC_INS_XVBF16GER2PP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_XVCMPEQDP, PPC_INS_XVCMPEQDP,
 #ifndef CAPSTONE_DIET
 	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_VSX, 0 }, 0, 0
@@ -11883,9 +12765,9 @@
 },
 
 {
-	PPC_XVCMPEQDPo, PPC_INS_XVCMPEQDP,
+	PPC_XVCMPEQDP_rec, PPC_INS_XVCMPEQDP,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR6, 0 }, { PPC_GRP_VSX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -11897,9 +12779,9 @@
 },
 
 {
-	PPC_XVCMPEQSPo, PPC_INS_XVCMPEQSP,
+	PPC_XVCMPEQSP_rec, PPC_INS_XVCMPEQSP,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR6, 0 }, { PPC_GRP_VSX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -11911,9 +12793,9 @@
 },
 
 {
-	PPC_XVCMPGEDPo, PPC_INS_XVCMPGEDP,
+	PPC_XVCMPGEDP_rec, PPC_INS_XVCMPGEDP,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR6, 0 }, { PPC_GRP_VSX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -11925,9 +12807,9 @@
 },
 
 {
-	PPC_XVCMPGESPo, PPC_INS_XVCMPGESP,
+	PPC_XVCMPGESP_rec, PPC_INS_XVCMPGESP,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR6, 0 }, { PPC_GRP_VSX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -11939,9 +12821,9 @@
 },
 
 {
-	PPC_XVCMPGTDPo, PPC_INS_XVCMPGTDP,
+	PPC_XVCMPGTDP_rec, PPC_INS_XVCMPGTDP,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR6, 0 }, { PPC_GRP_VSX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -11953,9 +12835,9 @@
 },
 
 {
-	PPC_XVCMPGTSPo, PPC_INS_XVCMPGTSP,
+	PPC_XVCMPGTSP_rec, PPC_INS_XVCMPGTSP,
 #ifndef CAPSTONE_DIET
-	{ PPC_REG_RM, 0 }, { PPC_REG_CR6, 0 }, { PPC_GRP_VSX, 0 }, 0, 0
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -11970,6 +12852,13 @@
 	PPC_XVCPSGNSP, PPC_INS_XVCPSGNSP,
 #ifndef CAPSTONE_DIET
 	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_VSX, 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XVCVBF16SPN, PPC_INS_XVCVBF16SPN,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -12010,6 +12899,13 @@
 
 {
 	PPC_XVCVHPSP, PPC_INS_XVCVHPSP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XVCVSPBF16, PPC_INS_XVCVSPBF16,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -12124,6 +13020,174 @@
 	PPC_XVDIVSP, PPC_INS_XVDIVSP,
 #ifndef CAPSTONE_DIET
 	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_VSX, 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XVF16GER2, PPC_INS_XVF16GER2,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XVF16GER2NN, PPC_INS_XVF16GER2NN,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XVF16GER2NP, PPC_INS_XVF16GER2NP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XVF16GER2PN, PPC_INS_XVF16GER2PN,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XVF16GER2PP, PPC_INS_XVF16GER2PP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XVF32GER, PPC_INS_XVF32GER,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XVF32GERNN, PPC_INS_XVF32GERNN,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XVF32GERNP, PPC_INS_XVF32GERNP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XVF32GERPN, PPC_INS_XVF32GERPN,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XVF32GERPP, PPC_INS_XVF32GERPP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XVF64GER, PPC_INS_XVF64GER,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XVF64GERNN, PPC_INS_XVF64GERNN,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XVF64GERNP, PPC_INS_XVF64GERNP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XVF64GERPN, PPC_INS_XVF64GERPN,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XVF64GERPP, PPC_INS_XVF64GERPP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XVI16GER2, PPC_INS_XVI16GER2,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XVI16GER2PP, PPC_INS_XVI16GER2PP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XVI16GER2S, PPC_INS_XVI16GER2S,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XVI16GER2SPP, PPC_INS_XVI16GER2SPP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XVI4GER8, PPC_INS_XVI4GER8,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XVI4GER8PP, PPC_INS_XVI4GER8PP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XVI8GER4, PPC_INS_XVI8GER4,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XVI8GER4PP, PPC_INS_XVI8GER4PP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XVI8GER4SPP, PPC_INS_XVI8GER4SPP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -12464,6 +13528,13 @@
 },
 
 {
+	PPC_XVTLSBB, PPC_INS_XVTLSBB,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_XVTSQRTDP, PPC_INS_XVTSQRTDP,
 #ifndef CAPSTONE_DIET
 	{ PPC_REG_RM, 0 }, { 0 }, { PPC_GRP_VSX, 0 }, 0, 0
@@ -12520,6 +13591,34 @@
 },
 
 {
+	PPC_XXBLENDVB, PPC_INS_XXBLENDVB,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XXBLENDVD, PPC_INS_XXBLENDVD,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XXBLENDVH, PPC_INS_XXBLENDVH,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XXBLENDVW, PPC_INS_XXBLENDVW,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_XXBRD, PPC_INS_XXBRD,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
@@ -12548,7 +13647,42 @@
 },
 
 {
+	PPC_XXEVAL, PPC_INS_XXEVAL,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_XXEXTRACTUW, PPC_INS_XXEXTRACTUW,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XXGENPCVBM, PPC_INS_XXGENPCVBM,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XXGENPCVDM, PPC_INS_XXGENPCVDM,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XXGENPCVHM, PPC_INS_XXGENPCVHM,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XXGENPCVWM, PPC_INS_XXGENPCVWM,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
@@ -12625,6 +13759,13 @@
 },
 
 {
+	PPC_XXMFACC, PPC_INS_XXMFACC,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_XXMRGHW, PPC_INS_XXMRGHW,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { PPC_GRP_VSX, 0 }, 0, 0
@@ -12635,6 +13776,13 @@
 	PPC_XXMRGLW, PPC_INS_XXMRGLW,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { PPC_GRP_VSX, 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XXMTACC, PPC_INS_XXMTACC,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -12667,9 +13815,23 @@
 },
 
 {
+	PPC_XXPERMX, PPC_INS_XXPERMX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_XXSEL, PPC_INS_XXSEL,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { PPC_GRP_VSX, 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XXSETACCZ, PPC_INS_XXSETACCZ,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif
 },
 
@@ -12681,7 +13843,28 @@
 },
 
 {
+	PPC_XXSPLTI32DX, PPC_INS_XXSPLTI32DX,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
 	PPC_XXSPLTIB, PPC_INS_XXSPLTIB,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XXSPLTIDP, PPC_INS_XXSPLTIDP,
+#ifndef CAPSTONE_DIET
+	{ 0 }, { 0 }, { 0 }, 0, 0
+#endif
+},
+
+{
+	PPC_XXSPLTIW, PPC_INS_XXSPLTIW,
 #ifndef CAPSTONE_DIET
 	{ 0 }, { 0 }, { 0 }, 0, 0
 #endif

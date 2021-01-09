@@ -36,7 +36,7 @@ static const char *getRegisterName(unsigned RegNo);
 static void printOperand(MCInst *MI, unsigned OpNo, SStream *O);
 static void printInstruction(MCInst *MI, SStream *O);
 static void printAbsBranchOperand(MCInst *MI, unsigned OpNo, SStream *O);
-static char *printAliasInstr(MCInst *MI, SStream *OS, MCRegisterInfo *MRI);
+static char *printAliasInstr(MCInst *MI, SStream *OS);
 static char *printAliasBcc(MCInst *MI, SStream *OS, void *info);
 static void printCustomAliasOperand(MCInst *MI, unsigned OpIdx,
 		unsigned PrintMethodIdx, SStream *OS);
@@ -613,7 +613,7 @@ void PPC_printInst(MCInst *MI, SStream *O, void *Info)
 
 	mnem = printAliasBcc(MI, O, Info);
 	if (!mnem)
-		mnem = printAliasInstr(MI, O, Info);
+		mnem = printAliasInstr(MI, O);
 
 	if (mnem != NULL) {
 		if (strlen(mnem) > 0) {
@@ -798,6 +798,20 @@ static void printATBitsAsHint(MCInst *MI, unsigned OpNo, SStream *O)
 	}
 }
 
+static void printImmZeroOperand(MCInst *MI, unsigned OpNo, SStream *O)
+{
+	unsigned int Value = (unsigned int)MCOperand_getImm(MCInst_getOperand(MI, OpNo));
+	// I have a suspicion that the value here is supposed to be zero...
+
+	printUInt32(O, Value);
+
+	if (MI->csh->detail) {
+		MI->flat_insn->detail->ppc.operands[MI->flat_insn->detail->ppc.op_count].type = PPC_OP_IMM;
+		MI->flat_insn->detail->ppc.operands[MI->flat_insn->detail->ppc.op_count].imm = Value;
+		MI->flat_insn->detail->ppc.op_count++;
+	}
+}
+
 static void printU1ImmOperand(MCInst *MI, unsigned OpNo, SStream *O)
 {
 	unsigned int Value = (unsigned int)MCOperand_getImm(MCInst_getOperand(MI, OpNo));
@@ -846,6 +860,19 @@ static void printU4ImmOperand(MCInst *MI, unsigned OpNo, SStream *O)
 	unsigned int Value = (int)MCOperand_getImm(MCInst_getOperand(MI, OpNo));
 	//assert(Value <= 15 && "Invalid u4imm argument!");
 
+	printUInt32(O, Value);
+
+	if (MI->csh->detail) {
+		MI->flat_insn->detail->ppc.operands[MI->flat_insn->detail->ppc.op_count].type = PPC_OP_IMM;
+		MI->flat_insn->detail->ppc.operands[MI->flat_insn->detail->ppc.op_count].imm = Value;
+		MI->flat_insn->detail->ppc.op_count++;
+	}
+}
+
+static void printS34ImmOperand(MCInst *MI, unsigned OpNo, SStream *O)
+{
+	unsigned int Value = (unsigned int)MCOperand_getImm(MCInst_getOperand(MI, OpNo));
+	// TODO: figure out if we need to do any value manipulation here
 	printUInt32(O, Value);
 
 	if (MI->csh->detail) {
@@ -1054,6 +1081,45 @@ static void printMemRegImm(MCInst *MI, unsigned OpNo, SStream *O)
 {
 	set_mem_access(MI, true);
 
+	printS16ImmOperand(MI, OpNo, O);
+
+	SStream_concat0(O, "(");
+
+	if (MCOperand_getReg(MCInst_getOperand(MI, OpNo + 1)) == PPC_R0)
+		SStream_concat0(O, "0");
+	else
+		printOperand(MI, OpNo + 1, O);
+
+	SStream_concat0(O, ")");
+
+	set_mem_access(MI, false);
+}
+
+static void printMemRegImm34(MCInst *MI, unsigned OpNo, SStream *O)
+{
+	set_mem_access(MI, true);
+
+	// TODO: probably needs functional fixes to be correct
+	printS16ImmOperand(MI, OpNo, O);
+
+	SStream_concat0(O, "(");
+
+	if (MCOperand_getReg(MCInst_getOperand(MI, OpNo + 1)) == PPC_R0)
+		SStream_concat0(O, "0");
+	else
+		printOperand(MI, OpNo + 1, O);
+
+	SStream_concat0(O, ")");
+
+	set_mem_access(MI, false);
+}
+
+static void printMemRegImm34PCRel(MCInst *MI, unsigned OpNo, SStream *O)
+{
+	set_mem_access(MI, true);
+
+	// TODO: probably needs functional fixes to be correct
+	// TODO: probably needs handling of the PCRel part as well
 	printS16ImmOperand(MI, OpNo, O);
 
 	SStream_concat0(O, "(");

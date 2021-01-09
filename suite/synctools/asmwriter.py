@@ -114,7 +114,7 @@ def print_line(line):
 
 for line in lines:
     line = line.rstrip()
-    #print("@", line)
+    #print("@", skip_line, line)
 
     # skip Alias
     if arch.upper() == 'X86':
@@ -132,12 +132,31 @@ for line in lines:
             skip_line = 0
             skip_count = 0
 
-    if "::printInstruction" in line:
-        if arch.upper() in ('AARCH64', 'ARM64'):
-            #print_line("static void printInstruction(MCInst *MI, SStream *O, MCRegisterInfo *MRI)\n{")
-            print_line("static void printInstruction(MCInst *MI, SStream *O)\n{")
-        else:
-            print_line("static void printInstruction(MCInst *MI, SStream *O)\n{")
+    if "std::pair<const char *, uint64_t> PPCInstPrinter::getMnemonic(const MCInst *MI) {" in line:
+        # We have to return two elements here; for c code, this means defining a new struct
+        # In a broader context, this is a helper function introduced in newer llvm versions
+        print_line("struct MnemonicData_t {")
+        print_line("  union {")
+        print_line("    const char* first;")
+        print_line("    const char* MnemonicString;")
+        print_line("  };")
+        print_line("  union {")
+        print_line("    uint64_t second;")
+        print_line("    uint64_t Bits;")
+        print_line("  };")
+        print_line("};")
+        print_line("")
+        print_line("typedef struct MnemonicData_t MnemonicData;")
+        print_line("")
+        print_line("MnemonicData PPCInstPrinter_getMnemonic(const MCInst *MI) {")
+    elif "auto MnemonicInfo" in line:
+        print_line("  MnemonicData MnemonicInfo = PPCInstPrinter_getMnemonic(MI);")
+    elif "return {AsmStrs+(Bits & 32767)-1, Bits};" in line:
+        print_line("  return (MnemonicData){AsmStrs+(Bits & 32767)-1, Bits};")
+    elif "::printInstruction" in line:
+        # The main function we're getting out of this file; note that we're changing the return type,
+        # as instead of returning the generated string, we're outputting it to a passed stream.
+        print_line("static void printInstruction(MCInst *MI, SStream *O)\n{")
     elif 'const char *AArch64InstPrinter::' in line:
         continue
     elif 'getRegisterName(' in line:
@@ -248,12 +267,21 @@ for line in lines:
         print_line("  unsigned int opcode = MCInst_getOpcode(MI);")
         print_line('  // printf("opcode = %u\\n", opcode);');
     elif 'MI->getOpcode()' in line:
-        if 'switch' in line:
+        if 'Bits |=' in line:
+            line2 = line.replace('MI->getOpcode()', 'MCInst_getOpcode(MI)')
+        elif 'switch' in line:
             line2 = line.replace('MI->getOpcode()', 'MCInst_getOpcode(MI)')
         else:
             line2 = line.replace('MI->getOpcode()', 'opcode')
         print_line(line2)
-
+    elif 'Address' in line:
+        if 'uint64_t Address' in line:
+            #reference as part of a function parameter; remove the parameter
+            line2 = line.replace('uint64_t Address, ', '')
+        else:
+            #reference as part of a call to printBranch; remove the use
+            line2 = line.replace('Address, ', '')
+        print_line(line2)
     elif 'O << ' in line:
         if '"' in line:
             line2 = line.lower()

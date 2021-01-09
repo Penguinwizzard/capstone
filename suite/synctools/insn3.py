@@ -4,6 +4,7 @@
 # by Nguyen Anh Quynh, 2019
 
 import sys
+import re
 
 if len(sys.argv) == 1:
     print("Syntax: %s <GenAsmMatcher.inc>" %sys.argv[0])
@@ -62,17 +63,16 @@ def extract_matcher(filename):
 
     # 1st enum is register enum
     for line in lines:
-        line = line.rstrip()
+        line = line.rstrip().strip()
     
-        if len(line.strip()) == 0:
+        if len(line) == 0:
             continue
     
-        if pattern in line.strip():
+        if pattern in line:
             match_count += 1
             #print(line.strip())
             continue
     
-        line = line.strip()
         if match_count == 1:
             if line == '};':
                 # done with first enum
